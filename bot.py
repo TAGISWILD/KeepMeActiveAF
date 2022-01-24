@@ -18,8 +18,12 @@ f2.write(nex_num)
 ############################################################
 f4.write(text+curr_num)
 ############################################################
+f2.close()
+f3.close()
+f4.close()
 ############################################################
-system("git add hello.txt")
+############################################################
+system("git add README.md")
 system('git commit -m "This is commit no. '+curr_num+'"')
-system("git push")
+system("git push origin main")
 
